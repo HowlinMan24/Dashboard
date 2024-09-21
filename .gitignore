@@ -1,0 +1,19 @@
+# Node,js
+node_modules/
+npm-debug-log
+
+# Angular
+dist/
+.angular/
+coverage/
+
+# Enfironments Files
+src/environments/*.ts
+
+# IDE and Editor files
+.idea/
+.vscode/
+
+# OS generated files
+.DS.Store
+Thumbs.db
