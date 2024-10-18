@@ -14,6 +14,8 @@ import {CalendarComponent} from "./calendar/calendar.component";
 import {HomeComponent} from "./home/home.component";
 import {RegisterComponent} from "./register/register.component";
 import {LoginComponent} from "./login/login.component";
+import {FileUploadModule} from "primeng/fileupload";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {LoginComponent} from "./login/login.component";
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FileUploadModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

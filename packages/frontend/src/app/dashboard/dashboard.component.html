@@ -1,1 +1,20 @@
 <h1>Dashboard</h1>
+<div class="bg-neutral-100 border-2 rounded-xl p-4 text-center">
+  <p-fileUpload
+    mode="basic"
+    chooseLabel="Choose"
+    chooseIcon="pi pi-upload"
+    name="demo[]"
+    url="https://www.primefaces.org/cdn/api/upload.php"
+    accept="image/*"
+    maxFileSize="1000000"
+    (onUpload)="onUpload($event)" />
+</div>
+<div class="grid grid-cols-4 auto-rows-auto gap-4 my-10">
+  <div class="bg-neutral-100 border-2 rounded-xl p-4 text-center"
+    *ngFor="let block of smallCells">
+  </div>
+  <div class="bg-neutral-100 border-2 rounded-xl p-6 text-center col-span-4 md:col-span-1"
+    *ngFor="let block of largeCells">
+  </div>
+</div>
